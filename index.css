@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+
+   /* background: url("https://source.unsplash.com/1600x900/?clouds"); */
+   background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Stormclouds.jpg/375px-Stormclouds.jpg");
+}
+body{
+    background-size: 100% 100%;
+}
+main{
+    /* background-color: #5b9ecb; */
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Current day box css */
+
+
+.cast1{
+    flex-direction: column;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+.cast2{
+    flex-direction: column;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(139, 10, 10, 0.2);
+    border-radius: 10px;
+}
+
+
+.day_name{
+    font-size: 20px;
+    color: white;
+}
+
+/* Search box css */
+#search{
+    font-size: 20px;   
+    padding: 5px;
+    border-radius:20px; 
+    border: none;
+    outline: none;
+}
+
+.text{
+    font-size: 15px;
+    color: white;
+}
+
+
+/* Forcast box css */
+.weatherforecast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 45vh;
+    /* background-color: #a2d0ef; */
+    border-radius: 100px;
+    box-shadow: 0px  16px 0px rgba(24,24,24,0.4);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.week{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+
+    background-color: rgba(25,25,25,0.2);
+    border-radius: 10px;
+}
+
+.weekhover{
+    display: none;
+    font-size: 20px;
+    background-color: rgba(50, 45, 45, 0.2);
+    padding: 20px;
+    box-shadow: 0px 6px 12px 0px rgba(25,25,25,0.3) ;
+    color: white;
+}
+
+.week:hover  .weekhover{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/* MOBILE */
+@media (max-width:400px)
+{   
+    body{
+
+    background-color: #5b9ecb;
+    }
+    #search{
+        margin-top: 5px;
+        font-size: 15px;   
+        padding: 5px;
+        border-radius:20px; 
+        border: none;
+        outline: none;
+    }
+  main{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+.cast1{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+.cast2{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+.weatherforecast{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
+}
